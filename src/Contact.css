@@ -1,0 +1,27 @@
+.contacts{
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+}
+.contacts h1{
+    color: rgb(245,101,57);
+}
+.contact-body{
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-form{
+    display: flex;
+}
+.contact-form input,
+.contact-form textarea {
+    background-color: transparent;
+}
+.contact-form label{
+    color: rgb(245,101,57);
+}
+.contact-details{
+    color: white;
+}

@@ -1,0 +1,14 @@
+.home{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    background-color: rgb(245, 101, 57);
+}
+.home-left{
+    height: 100%;
+    width: 35%;
+}
+.home-right{
+    height: 100%;
+    width: 65%;
+}

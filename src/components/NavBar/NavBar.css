@@ -1,18 +1,27 @@
-
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: "BestermindRegular";
     src: url(BestermindRegular.ttf);
 }
 .navBar{
+    width: 100%;
     display: flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    background-color: rgb(245, 101, 57);
-    margin-top: 1rem;
+    z-index: 99;
+    padding-top: 1.5rem;
 }
 .navBar > h1{
     color: rgb(33, 33, 33);
     font-family: "BestermindRegular";
     font-size: 2em;
+}
+.navBar > svg{
+    height: 2.2rem;
+    color: white;
 }

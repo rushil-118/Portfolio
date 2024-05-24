@@ -20,7 +20,9 @@ function Education(){
                     </div>
                 </div>
             </div>
-            
+            <div className='education-img'>
+                <img src='https://dev-portfolio-template.netlify.app/static/media/eduOrange.c61dcfc3.svg'></img>
+            </div>
         </div>
     )
 }

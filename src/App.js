@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar';
-import Home from './Home';
-import About from './About';
-import Education from './Education';
-import Contact from './Contact';
+import NavBar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Education from './components/Education/Education';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (

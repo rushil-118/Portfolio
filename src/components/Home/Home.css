@@ -1,0 +1,76 @@
+.home{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 101, 57);
+}
+.home-left{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 35%;
+}
+.home-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+    background-color: rgb(33, 33, 33);
+}
+.icons{
+    width: 20em;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3em 3em;
+}
+
+.self-details{
+    color: white;
+}
+.self-details h6{
+    opacity: 0.75;
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+.self-details h1{
+    font-size:xxx-large;
+}
+.buttons{
+    margin-top: 2rem;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button{
+    border-radius: 25px;
+    height: 3rem;
+    width: 9rem;
+    cursor: pointer;
+}
+.cv{
+    background-color: rgb(33, 33, 33);
+    color: rgb(245, 101, 57);
+    border: 3.5px solid rgb(245, 101, 57);
+    font-size:medium;
+    font-weight: bold;
+}
+.cv:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    transition: ease-out 0.2s;
+}
+.contacts-btn{
+    background-color: rgb(245, 101, 57);
+    font-size:medium;
+    font-weight: bold;   
+}
+.contacts-btn:hover{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border: 3.5px solid white;
+}

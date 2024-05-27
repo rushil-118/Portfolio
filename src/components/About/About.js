@@ -15,7 +15,7 @@ function About(){
                         <br />
                         <br />
                         <br />
-                        I've just started Web Development and I enjoy doing it coz it allows me
+                        I've just started Web Development and I enjoy doing it because it allows me
                         to build according to my imagination and it is fun to build new things. 
 
                     </p>

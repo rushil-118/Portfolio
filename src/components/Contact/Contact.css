@@ -1,19 +1,23 @@
 .contacts{
+    position: relative;
     height: 100vh;
-    padding: 2rem 4rem;
+    padding: 2rem 6rem 3rem;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     background-color: rgb(33, 33, 33);
 }
 .contacts h1{
+    font-size: 3.5em;
     color: rgb(245,101,57);
     margin-bottom: 2em;
 }
 .contact-body{
     display: flex;
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .contact-form {
     display: flex;
@@ -25,32 +29,34 @@
     flex-direction: column;
     gap: 2em;
 }
-
+.contact-body>img{
+    height: 30em;
+    width: 30em;
+}
 .contact-form input,
 .contact-form textarea {
     background-color: transparent;
 }
-.contact-form label{
-    color: rgb(245,101,57);
-    /* display: inline-flex; */
-}
+
 .input{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .input input,
 .input textarea{
-    width: 100%;
-    border: 4px rgb(245,101,57) solid;
+    height: 3em;
+    width: 80%;
+    border: 3px rgb(245,101,57) solid;
     border-radius: 25px;
     font-size: large;
     color: white;
     resize: none;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
     padding: 1em;
 }
 .input textarea{
-    width: 100%;
+    width: 80%;
     height: 10em;
 }
 .name:focus {
@@ -60,7 +66,16 @@
     display: flex;
     cursor: pointer;
 }
-
+.label{
+    color: rgb(245,101,57);
+    transform: translate(25px,10px);
+    top: -20px; 
+    left: 1em;
+    background-color: #212121;
+    display: inline-flex;
+    padding: 0 5px;
+    position: absolute;
+}
 .submit-button button{
     display: flex;
     justify-content: space-evenly;
@@ -73,8 +88,124 @@
     font-size: large;
 }
 .submit-icon{
-    /* translate: ; */
+    transform: rotate(-25deg);
 }
 .contact-details{
     color: white;
 }
+
+/* .contacts {
+    position: relative;
+    height: 100vh;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(33, 33, 33);
+}
+
+.contacts h1 {
+    font-size: 3.5em;
+    color: rgb(245, 101, 57);
+    margin-bottom: 2em;
+}
+
+.contact-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.contact-form {
+    display: flex;
+    width: 40%;
+}
+
+.contact-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contact-body > img {
+    height: 30em;
+    width: 30em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: transparent;
+    border: 3px rgb(245, 101, 57) solid;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    padding: 1em;
+}
+
+.label {
+    color: rgb(245, 101, 57);
+    transform: translateY(9px);
+    background-color: #212121;
+    display: inline-flex;
+    padding: 0 5px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%; 
+    margin-bottom: 2em; 
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    height: 3em;
+    border: 3px rgb(245, 101, 57) solid;
+    border-radius: 25px;
+    font-size: large;
+    color: white;
+    resize: none;
+    padding: 1em;
+}
+
+.input textarea {
+    height: 10em;
+}
+
+.input .label {
+    position: absolute;
+    top: -20px; 
+    left: 1em;
+    background: #212121; 
+    padding: 0 5px; 
+}
+
+.submit-button {
+    display: flex;
+    cursor: pointer;
+}
+
+.submit-button button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(245, 101, 57);
+    border-radius: 25px;
+    width: 8em;
+    height: 2em;
+    font-size: large;
+    border: none;
+    color: white; 
+}
+
+.submit-icon {
+    transform: rotate(-25deg);
+}
+
+.contact-details {
+    color: white;
+} */

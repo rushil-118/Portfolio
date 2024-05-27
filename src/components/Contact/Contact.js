@@ -8,15 +8,15 @@ function Contact(){
                 <div className="contact-form">
                     <form>
                         <div className="input">
-                            <label>Name</label>
+                            <label className="label">Name</label>
                             <input className="name" type="text" placeholder="Rushil Choudhary"></input>
                         </div>
                         <div className="input">
-                            <label>Email</label>
+                            <label className="label">Email</label>
                             <input type="email" placeholder="Rushil Choudhary"></input>
                         </div>
                         <div className="input">
-                            <label>Message</label>
+                            <label className="label">Message</label>
                             <textarea placeholder="Type your message..."></textarea>
                         </div>
                         <div className="submit-button">
@@ -36,8 +36,8 @@ function Contact(){
                     <div>+918660174808</div>
                     <div>Scaler School of Technology</div>
                 </div>
+                <img src="https://dev-portfolio-template.netlify.app/static/media/contactsOrange.75754594.svg"></img>
             </div>
-            <img src="https://dev-portfolio-template.netlify.app/static/media/contactsOrange.75754594.svg"></img>
         </div>
     )
 }

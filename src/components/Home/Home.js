@@ -22,7 +22,7 @@ function Home(){
                     </a>                    
                 </div>
             </div>
-
+            <div className='self-img'></div>
             <div className="home-right">
                 <div className='self-details'>
                     <h6>Web Developer</h6>

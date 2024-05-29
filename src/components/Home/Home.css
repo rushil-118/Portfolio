@@ -20,6 +20,14 @@
     width: 65%;
     background-color: rgb(33, 33, 33);
 }
+.self-img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
+    background-color: white;
+    position: absolute;
+    left: 26.5%;
+}
 .icons{
     width: 20em;
     display: flex;

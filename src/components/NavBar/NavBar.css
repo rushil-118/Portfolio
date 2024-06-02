@@ -25,3 +25,7 @@
     height: 2.2rem;
     color: white;
 }
+svg:hover{
+    cursor: pointer;
+    color: rgb(245,101,57);
+}

@@ -1,0 +1,41 @@
+.projects{
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.project-cards{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
+
+}
+.projects-header h1{
+    font-size: 60px;
+    color: #f56539;
+    margin-bottom: 40px;
+}
+.cardid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF764D;
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 30px;
+}
+.cardid h2{
+    color: #eaeaea;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+.image{
+    height: 10em;
+    width: 10em;
+}

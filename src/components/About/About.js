@@ -1,7 +1,7 @@
 import './About.css';
 function About(){
     return(
-        <div className="about">
+        <div className="about" id='About'>
             <div className='line'>
                 <div className='circle'></div>
                 <div className='circle'></div>

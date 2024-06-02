@@ -1,11 +1,37 @@
+import {useRef, useState, useEffect} from "react";
 import './Home.css';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-// import Contact from '../Contact/Contact';
 
 function Home(){
+    const array = ["SOFTWARE DEVELOPER", "MERN STACK DEVELOPER"]
+    const [displayedText,setDisplayedText] = useState("");
+    const [isDeleting,setDeleting] = useState(false);
+    const [index,setIndex] = useState(0);
+    useEffect(() => {
+        const handleTyping = ()=>{
+            if(isDeleting){
+                if(displayedText.length > 0){
+                    setDisplayedText((prev) => prev.slice(0,-1));
+                }
+                else{
+                    setIndex((index+1)% array.length);
+                    setDeleting(false);
+                }
+            }
+            else{
+                if(displayedText.length < array[index].length){
+                    setDisplayedText((prev) => prev + array[index].charAt(displayedText.length));
+                }
+                else{
+                    setDeleting(true);
+                }
+            }
+        };
+        const timeout = setTimeout(handleTyping, isDeleting?50:100)
+
+        return() => clearTimeout(timeout);
+    },[displayedText,isDeleting,index])
     return(
-        <div className="home">
+        <div className="home" id='Home'>
             <div className="home-left">
                 <div className='icons'>
                     <a href="https://github.com/" target="_blank" rel="noreferrer">
@@ -22,10 +48,12 @@ function Home(){
                     </a>                    
                 </div>
             </div>
-            <div className='self-img'></div>
+            <div className='self-img'>
+                <img src="https://media.licdn.com/dms/image/D4D03AQHQWHq4A2zxaQ/profile-displayphoto-shrink_800_800/0/1715864572954?e=1723075200&v=beta&t=TeZRNCSm_mzrBAmRarp3eiGleV8UdfXo8qTXLAynQQo" alt="self-img"/>
+            </div>
             <div className="home-right">
                 <div className='self-details'>
-                    <h6>Web Developer</h6>
+                    <h6>{displayedText}</h6>
                     <h1>Rushil Choudhary</h1>
                     <p></p>
                     <div className='buttons'>
@@ -35,14 +63,6 @@ function Home(){
                         <a>
                             <button className='contacts-btn'>Contact</button>
                         </a>
-                        {/* <Link to='/components/Contact'>
-                            <button className='contacts-btn'>Contact</button>
-                        </Link> */}
-                        {/* <Switch>
-                            <Route path="/components/Contact">
-                                <Contact />
-                            </Route>
-                        </Switch> */}
                     </div>
                 </div>
             </div>

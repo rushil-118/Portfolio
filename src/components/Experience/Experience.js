@@ -9,32 +9,32 @@ function Experience(){
                 <h1>Experience</h1>
                 <div className='experience-card'>
                     <div className='card-img'>
-                        <img src=''></img>
+                        <img src='https://dev-portfolio-template.netlify.app/static/media/expImgWhite.0b896d9c.svg'></img>
                     </div>
                     <div className='experience-details'>
-                        <h6></h6>
-                        <h4></h4>
-                        <h5></h5>
+                        <h6>May 2023 - Present</h6>
+                        <h4>Software Developer</h4>
+                        <h5>Company1</h5>
                     </div>
                 </div>
                 <div className='experience-card'>
                     <div className='card-img'>
-                        <img src=''></img>
+                        <img src='https://dev-portfolio-template.netlify.app/static/media/expImgWhite.0b896d9c.svg'></img>
                     </div>
                     <div className='experience-details'>
-                        <h6></h6>
-                        <h4></h4>
-                        <h5></h5>
+                        <h6>May 2023 - Present</h6>
+                        <h4>Software Developer</h4>
+                        <h5>Company1</h5>
                     </div>
                 </div>
                 <div className='experience-card'>
                     <div className='card-img'>
-                        <img src=''></img>
+                        <img src='https://dev-portfolio-template.netlify.app/static/media/expImgWhite.0b896d9c.svg'></img>
                     </div>
                     <div className='experience-details'>
-                        <h6></h6>
-                        <h4></h4>
-                        <h5></h5>
+                        <h6>May 2023 - Present</h6>
+                        <h4>Software Developer</h4>
+                        <h5>Company1</h5>
                     </div>
                 </div>
             </div>
